@@ -1,0 +1,112 @@
+/* General calculator styling */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calculator {
+    width: 320px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .display {
+    padding: 20px;
+    font-size: 2em;
+    text-align: right;
+    color: #fff;
+    background-color: #444;
+    border-bottom: 2px solid #666;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .btn {
+    font-size: 1.2em;
+    padding: 20px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Styling for the buttons with different functions */
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  .btn:active {
+    background-color: #888;
+  }
+  
+  .operator {
+    background-color: #ff9500;
+  }
+  
+  .operator:hover {
+    background-color: #e08500;
+  }
+  
+  .clear {
+    background-color: #ff3b30;
+  }
+  
+  .clear:hover {
+    background-color: #e02b20;
+  }
+  
+  /* Specific styles for the new buttons */
+  [data-value="AC"] {
+    background-color: #d9534f;
+  }
+  
+  [data-value="AC"]:hover {
+    background-color: #c9403b;
+  }
+  
+  [data-value="%"] {
+    background-color: #5bc0de;
+  }
+  
+  [data-value="%"]:hover {
+    background-color: #4aaac7;
+  }
+  
+  [data-value="00"] {
+    background-color: #5cb85c;
+  }
+  
+  [data-value="00"]:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Styling for the "=" button */
+  .equal {
+    grid-column: span 2;
+    background-color: #28a745;
+  }
+  
+  .equal:hover {
+    background-color: #218838;
+  }
+  
+  /* Adjust the size of number and operator buttons */
+  .btn:not(.equal) {
+    width: 100%;
+    height: 100%;
+  }
+  
